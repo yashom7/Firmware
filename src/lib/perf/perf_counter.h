@@ -69,16 +69,6 @@ __EXPORT extern perf_counter_t	perf_alloc(enum perf_counter_type type, const cha
 #endif
 
 /**
- * Get the reference to an existing counter or create a new one if it does not exist.
- *
- * @param type			The type of the counter.
- * @param name			The counter name.
- * @return			Handle for the counter, or NULL if a counter
- *				could not be allocated.
- */
-__EXPORT extern perf_counter_t	perf_alloc_once(enum perf_counter_type type, const char *name);
-
-/**
  * Free a counter.
  *
  * @param handle		The performance counter's handle.
